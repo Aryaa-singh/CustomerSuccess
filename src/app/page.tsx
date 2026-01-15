@@ -1,15 +1,22 @@
+'use client';
+
 import { Hero } from '@/components/Hero';
 import { Section } from '@/components/Section';
 import { StatsDashboard } from '@/components/StatsDashboard';
 import { CaseStudyCard } from '@/components/CaseStudyCard';
 import { Footer } from '@/components/Footer';
+import { ContactModal } from '@/components/ContactModal';
 import { skills, tools, caseStudies, personalInfo } from './data';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Home() {
+    const [isContactOpen, setIsContactOpen] = useState(false);
+
     return (
         <main className="min-h-screen bg-slate-50 dark:bg-slate-950">
             <Hero />
+            <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
 
             <Section
                 id="impact"
@@ -105,15 +112,17 @@ export default function Home() {
                     Ready to decrease churn and increase NRR? Let's connect and discuss how I can help your team succeed.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a
-                        href={`mailto:${personalInfo.email}`}
+                    <button
+                        onClick={() => setIsContactOpen(true)}
                         className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-indigo-900 bg-white rounded-lg hover:bg-slate-100 transition-all shadow-xl"
                     >
                         Contact Me
                         <ArrowRight className="w-5 h-5" />
-                    </a>
+                    </button>
                     <a
                         href={personalInfo.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-indigo-800 rounded-lg hover:bg-indigo-700 transition-all border border-indigo-700"
                     >
                         LinkedIn Profile

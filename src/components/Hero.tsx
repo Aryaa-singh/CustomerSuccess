@@ -34,7 +34,8 @@ export function Hero() {
                         <ArrowRight className="w-4 h-4" />
                     </a>
                     <a
-                        href="#"
+                        href={personalInfo.resumeLink}
+                        download
                         className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-base font-semibold text-slate-200 bg-white/10 rounded-lg hover:bg-white/20 transition-all backdrop-blur-sm"
                     >
                         <FileText className="w-4 h-4" />

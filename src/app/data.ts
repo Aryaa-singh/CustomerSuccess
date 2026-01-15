@@ -82,5 +82,5 @@ export const personalInfo = {
     tagline: "Customer Success is not support — it’s strategy.",
     email: "alex.sterling@example.com",
     linkedin: "https://linkedin.com/in/alexsterling",
-    resumeLink: "#"
+    resumeLink: "/resume.pdf"
 }
