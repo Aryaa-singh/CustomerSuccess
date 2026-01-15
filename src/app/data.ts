@@ -77,10 +77,10 @@ export const caseStudies = [
 ];
 
 export const personalInfo = {
-    name: "Alex Sterling",
+    name: "Arya Singh",
     role: "Strategic Customer Success Manager",
     tagline: "Customer Success is not support — it’s strategy.",
-    email: "alex.sterling@example.com",
-    linkedin: "https://linkedin.com/in/alexsterling",
+    email: "singhh.aryaa@gmail.com",
+    linkedin: "https://www.linkedin.com/in/arya-singh-186b3620b/",
     resumeLink: "/resume.pdf"
 }
