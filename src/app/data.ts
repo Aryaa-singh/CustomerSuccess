@@ -1,4 +1,4 @@
-import { LucideIcon, BarChart3, Users, TrendingUp, PieChart, CheckCircle2, Layout, Zap, MessagesSquare, ShieldCheck, Database, Rocket } from 'lucide-react';
+import { LucideIcon, Users, Zap, ShieldCheck, Database } from 'lucide-react';
 
 export interface Stat {
     label: string;
